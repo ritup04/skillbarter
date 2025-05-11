@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us | Skillzy</title>
+  <link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="./img/logo3.png" alt="Skillzy Logo">
+    </div>
+    <nav class="nav-bar">
+      <a href="home.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>We'd Love to Hear From You</h1>
+    <p>Whether you're curious about features, a free trial, or even press - we're ready to answer any and all questions.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact container">
+    <div class="contact-card">
+      <form action="contact_process.php" method="POST" class="contact-form">
+        <h2>Send Us a Message</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="info-box">
+        <h3>Contact Details</h3>
+        <p><strong>Email:</strong> <a href="mailto:support@skillzy.com">support@skillzy.com</a></p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Location:</strong> Ahmedabad, Gujarat, India</p>
+
+        <!-- Embedded Google Map (Ahmedabad) -->
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.008326801944!2d72.57136257428438!3d23.03156321646212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f24cd0756d%3A0x45e100f5f4fca12b!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1715082728306!5m2!1sen!2sin" 
+            width="100%" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="socials">
+          <a href="#"><img src="./img/meta (1).png" alt="Facebook"></a>
+          <a href="#"><img src="./img/twitter (1).png" alt="Twitter"></a>
+          <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="./img/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div>
+        <h3>What is Skillzy?</h3>
+        <p>Skillzy is a skill-barter platform that allows users to exchange skills directly with others-no money involved!</p>
+      </div>
+      <div>
+        <h3>Is it really free?</h3>
+        <p>Yes! Skillzy is 100% free to use. We're here to encourage a collaborative learning environment.</p>
+      </div>
+      <div>
+        <h3>Can I offer more than one skill?</h3>
+        <p>Absolutely! List all the skills you're confident in teaching or willing to exchange.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Skillzy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

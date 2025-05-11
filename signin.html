@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In | Skillzy</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Candara", sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-container {
+      width: 90%;
+      max-width: 400px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-container img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #b048b5;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      font-size: 16px;
+      color: #333;
+    }
+    input::placeholder {
+      color: #555;
+    }
+    button {
+      background: #b048b5;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: purple;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+    a {
+      color: #b048b5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <img src="./img/logo3.png" alt="Skillzy Logo">
+      <h2>Sign In</h2>
+      <form action="login.php" method="POST">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p>Don't have an account? <a href="./signup.html">Register</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

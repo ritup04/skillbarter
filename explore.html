@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore Skills | Skillzy</title>
+  <link rel="stylesheet" href="explore-style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="./img/logo3.png" alt="Skillzy Logo">
+  </div>
+  <nav class="nav-bar">
+    <a href="home.html">Home</a>
+    <a href="explore.html" class="active">Explore</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="explore-hero">
+  <h1>Explore Skills</h1>
+  <p>Find a skill to learn or swap</p>
+
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search Skills...">
+    <button onclick="searchSkills()">Search</button>
+  </div>
+
+  <div class="categories">
+    <button class="category-btn" onclick="filterCategory('All')">All</button>
+    <button class="category-btn" onclick="filterCategory('Art')">Art</button>
+    <button class="category-btn" onclick="filterCategory('Tech')">Tech</button>
+    <button class="category-btn" onclick="filterCategory('Music')">Music</button>
+    <button class="category-btn" onclick="filterCategory('Fitness')">Fitness</button>
+    <button class="category-btn" onclick="filterCategory('Cooking')">Cooking</button>
+    <button class="category-btn" onclick="filterCategory('Language')">Language</button>
+  </div>
+</section>
+
+<section class="skills-container" id="skills-grid">
+  <!-- Example Skill Card -->
+  <div class="skill-card" data-category="Art">
+    <img src="./img/sketch.png" alt="Sketching">
+    <h3>Art of Sketching</h3>
+    <p>by Nainsi</p>
+    <p>Learn basic sketching techniques and shading.<br><br>#art #sketching</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Tech">
+    <img src="./img/web-development.png" alt="Web Development">
+    <h3>Web Development</h3>
+    <p>by Priyanshi</p>
+    <p>Build beautiful websites using HTML, CSS, and JS.<br><br>#tech #webdev</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Music">
+    <img src="./img/electric-guitar.png" alt="Guitar Lessons">
+    <h3>Guitar Lessons</h3>
+    <p>by Mamta</p>
+    <p>Strumming patterns and beginner songs.<br><br>#music #guitar</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Cooking">
+    <img src="./img/cooking.png" alt="Indian Cooking">
+    <h3>Indian Cooking</h3>
+    <p>by Zeel</p>
+    <p>Master the desi tadka and Indian dishes.<br><br>#cooking #indian</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Fitness">
+    <img src="./img/yoga.png" alt="Home Workouts">
+    <h3>Home Workouts</h3>
+    <p>by Aryan</p>
+    <p>No equipment? No problem. Get fit at home!<br><br>#fitness</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Language">
+    <img src="./img/french.png" alt="Spoken French">
+    <h3>Spoken French</h3>
+    <p>by Dhwanit</p>
+    <p>Learn how to speak everyday French.<br><br>#language #french</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+  <div class="skill-card" data-category="Tech">
+    <img src="./img/app-development.png" alt="App Development">
+    <h3>App Development</h3>
+    <p>by Nisharg</p>
+    <p>Build Android apps using Flutter and Dart.<br><br>#tech #appdev #flutter #app #dev</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Art">
+    <img src="./img/paint.png" alt="Acrylic Painting">
+    <h3>Acrylic Painting</h3>
+    <p>by Muskan</p>
+    <p>Create vibrant art with easy-to-learn techniques.<br><br>#art #painting #acrylic</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Music">
+    <img src="./img/keyboard.png" alt="Piano">
+    <h3>Piano for Beginners</h3>
+    <p>by Aarav</p>
+    <p>Understand chords, keys, and simple songs.<br><br>#music #piano #lessons</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+  <div class="skill-card" data-category="Tech">
+    <img src="./img/python.png" alt="Python Programming">
+    <h3>Python Programming</h3>
+    <p>by Mitali</p>
+    <p>Learn the basics of Python and data science.<br><br>#tech #python #programming</p>
+    <a href="#" class="btn">Swap Now</a>
+  </div>
+
+</section>
+
+<footer>
+  <p>&copy; 2025 Skillzy. All rights reserved.</p>
+</footer>
+
+<script>
+  function filterCategory(category) {
+    const cards = document.querySelectorAll('.skill-card');
+    cards.forEach(card => {
+      const match = card.getAttribute('data-category') === category || category === 'All';
+      card.classList.toggle('hidden', !match);
+    });
+  }
+
+  function searchSkills() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const cards = document.querySelectorAll('.skill-card');
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      card.classList.toggle('hidden', !text.includes(query));
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Candara', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fce3fc, #d3f2ff);
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10vh;
+    width: 100%;
+}
+
+.logo img {
+    height: 15vh;
+    width: auto;
+}
+
+.nav-bar a {
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #b048b5;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #b048b5;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #b048b5;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #b048b5;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #8a2be2;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Benefits Section */
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.benefits-img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.benefits-text h2 {
+  font-size: 32px;
+  color: #b048b5;
+  margin-bottom: 20px;
+}
+
+.benefits-text ul {
+  list-style: disc inside;
+  line-height: 2;
+  font-size: 18px;
+}
+
+/* Courses Section */
+.courses h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #b048b5;
+}
+
+.course-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #b048b5;
+}
+
+/* Why Choose Skillzy */
+.why-choose h2 {
+  text-align: center;
+  color: #b048b5;
+  margin-bottom: 40px;
+}
+
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.why-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.why-card h3 {
+  margin-bottom: 15px;
+  color: #b048b5;
+}
+
+/* Testimonials with Glassmorphism */
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #b048b5;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  width: 280px;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  text-align: right;
+  color: #b048b5;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #fff;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
+  

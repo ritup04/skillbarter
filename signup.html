@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up | Skillzy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Candara", sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .illustration {
+            width: 50%;
+            background: url('./img/Mobile\ login-pana.svg') no-repeat center center/cover;
+        }
+        .form-container {
+            width: 50%;
+            background: #f9f9f9;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #b048b5;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        form {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .gender-options {
+            margin-bottom: 15px;
+        }
+        .gender-options label {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        button {
+            background: #b048b5;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: purple;
+        }
+        p {
+            margin-top: 7px;
+            font-size: 16px;
+        }
+        a {
+            color: #b048b5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="illustration"></div>
+
+        <div class="form-container">
+            <img src="./img/logo3.png" alt="Skillzy Logo">
+            <h2>Register</h2>
+            <form action="register.php" method="POST">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="text" placeholder="Country" required>
+                <input type="text" placeholder="City" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                
+                <label style="margin-bottom: 5px;">Gender:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                    <label><input type="radio" name="gender" value="Prefer not to say"> Prefer not to say</label>
+                </div>
+
+                <button type="submit" href="./home.html">Submit</button>
+            </form>
+
+            <p>Already have an account? <a href="./signin.html">Sign in</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
