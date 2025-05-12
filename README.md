@@ -71,7 +71,7 @@ Follow these steps to run the project locally:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/skillzy.git
+   git clone https://github.com/ritup04/skillzy.git
    cd skillzy
    ```
 
@@ -111,8 +111,8 @@ Feel free to fork the repository, raise issues, or submit pull requests to impro
 
 For queries, suggestions, or feedback, please contact:
 
-GitHub: ritup04 (https://github.com/ritup04)  
-Email: ritupal1626@gmail.com
+GitHub: [ritup04](https://github.com/ritup04)  
+Email: [ritupal1626@gmail.com](mailto:ritupal1626@gmail.com)
 
 ---
 
